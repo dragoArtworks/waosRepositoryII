@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;    
+    background-image: url("C:/Users/JANUS/Pictures/FondoGris.png");
+    background-size: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+}
+
+.header {
+    text-align: left;
+    align-items: center;
+    display: flex;
+    margin-left: 10%;
+}
+
+.texto {
+    font-weight: bold;
+    display: flex;
+}
+
+.button-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 10%;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:xx-large;
+}
+
+.button:hover {
+    background-color: #004466;
+}
+
+.gatoperro{
+    width: 750px;
+    height: 750px;
+    margin-right: 0px;
+    margin-top: 200px;
+}
+
+.gatoperro1{
+    width: 75px;
+    height: 75px;
+}
+
