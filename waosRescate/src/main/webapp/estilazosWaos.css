@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;    
+    font-family: monospace;    
     background-image: url("C:/Users/JANUS/Pictures/FondoGris.png");
     background-size: 100%;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -8,12 +8,14 @@ body {
 }
 
 .container {
+    font-family: monospace; 
     margin: 0 auto;
     text-align: left;
     color: white;
 }
 
 .header {
+    font-family: monospace; 
     text-align: left;
     align-items: center;
     display: flex;
@@ -33,13 +35,13 @@ body {
 }
 
 .button {
+    font-family: monospace; 
     padding: 10px 20px;
     background-color: #0099ff;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:xx-large;
 }
 
