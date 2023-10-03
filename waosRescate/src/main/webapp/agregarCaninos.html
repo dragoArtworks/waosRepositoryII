@@ -1,20 +1,13 @@
-<%-- 
-    Document   : AgregarFelinos
-    Created on : 30/09/2023, 8:43:55 p. m.
-    Author     : USER
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <title>agregar Felinos</title>
+    <title>agregar Caninos</title>
 </head>
 <body>
-    <form action="gato" method="post"
+    <form action="/catalogo" method="post"
     onsubmit="return ValidarForma(this)">
     <div class="contenido">
         <div class="empresa">
@@ -25,13 +18,13 @@
             </p>
         </div>
         <div class="imagen">
-            <img src="imagenes/doraimon.png" alt="" width="750px" height="750px">
+            <img src="imagenes/chems.png" alt="" width="750px" height="750px">
         </div>
     
     <div class="tituloContenedor">
-        <h1>Agregar felino</h1>
+        <h1>Agregar Caninos</h1>
          <p>Por favor, complete los siguientes datos para 
-            <br>agregar a su mascota felina</p>
+            <br>agregar a su mascota canina</p>
     </div>
     <div class="contenedor" >
     
@@ -51,13 +44,24 @@
                 <td>
                       <select name="raza" class="default"id="raza">
                         <option value="">seleccionar</option>
-                        <option value="angora">angora</option>
-                        <option value="siames">siames</option>
-                        <option value="persa">persa</option>
-                        <option value="azul ruso">azul ruso</option>
-                        <option value="siberiano">siberiano</option>
-                        <option value="maine Coom">maine Coon</option>
-                        <option value="Bengali">bengali</option>
+                        <option value="labrador retriever">labrador retriever</option>
+                        <option value="bulldog frances">bulldog frances</option>
+                        <option value="golden retriever">golden retriever</option>
+                        <option value="Pastor aleman">Pastor alemán</option>
+                        <option value="Caniche">Caniche</option>
+                        <option value="Bulldog">Bulldog</option>
+                        <option value="Beagle">Beagle</option>
+                        <option value="Rottweiler">Rottweiler</option>
+                        <option value="Braco alemán de pelo corto">Braco alemán de pelo corto</option>
+                        <option value="Labrador">Labrador</option>
+                        <option value="Pug">Pug</option>
+                        <option value="Schnauzer">Schnauzer</option>
+                        <option value="Beagle">Beagle</option>
+                        <option value="Husky Siberiano">Husky Siberiano</option>
+                        <option value="Pastor Alemán">Pastor Alemán</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="Pitbull">Pitbull</option>
+                        <option value="criollo">criollo</option>
                       </select>
                 </td>
             </tr>
@@ -79,15 +83,10 @@
             </tr>
             <tr>
                 <td>
-                    toxoplasmosis:
+                    Nivel de entrenamiento:
                 </td>
                 <td>
-                    <input type="radio" name="toxo" id="toxoTrue" value="true">
-                    <label for="toxoTrue"class="default">positivo</label>
-                    <br>                    
-                    <input type="radio" name="toxo" id="toxoFalse" value="false">
-                    <label for="toxoFalse"class="default"> negativo</label>
-                    
+                    <input type="text" name="entrenamiento" id="nivel" class="default">
                 </td>
             </tr>
             <tr>

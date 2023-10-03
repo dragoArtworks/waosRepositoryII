@@ -1,0 +1,120 @@
+body{
+    background-image: url(imagenes/FondoGris.png);
+    background-size: 100%;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 697px auto;
+    grid-template-rows: 300px 300px;
+}
+.empresa{
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 110px;
+    padding-left: 10%;
+    padding-top: 0%;
+}
+.empresaI{
+    grid-column: 2;
+    font-family: monospace;
+    color: white;
+    font-size: 30px;
+}
+
+.tituloContenedor{
+    grid-column: 2;
+    grid-row:1;
+    display: grid;
+    margin: 0 auto; 
+    justify-items:start;
+    align-content: center;
+    
+    padding: 2%;
+    padding-bottom: 2px;
+    margin-bottom: 0px;
+}
+.contenedor{
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    height: 450px;
+    width: 600px;
+    justify-content: center;
+    justify-items:start;
+    align-content: center;
+    text-align: start;
+    margin: 0 auto;
+    
+    background-color: rgb(56, 182, 255);
+    border-radius: 20px;
+    align-items: center;
+}
+.imagen{
+    margin-left: 25%px;
+    padding: 20%;
+    grid-column: 1;
+    grid-row:1 / 2;
+    padding-left: 20%;
+    
+}
+
+.table{
+    font-family: monospace;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0%;
+    padding: 3%;
+}
+.columna{
+    padding: 2%;
+    padding-right: 135px;
+    padding-left: 7px;
+}
+h1{
+    font-family: monospace;
+    color: white;
+    font-size: 60px;
+    margin-bottom: 0%;
+}
+p{
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0%;
+}
+.default{
+    font-size: 15px;
+    text-align: justify;
+    border-radius: 30px;
+    height:30px ;
+    width: 200px;
+    border-style: none;
+}
+.boton{
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    background-color:rgb(44, 121, 166) ;
+    border-style: none;
+}
+.boton:hover{
+    font-size: 23px;
+    width: 210px;
+    height: 45px;
+}
+.boton:active{
+    color:rgb(44, 121, 166) ;
+    background-color: rgb(255, 255, 255);
+}
+select{
+    text-align: center;
+    color: rgb(161, 161, 161);
+    font-family: cursive;
+    font-size: 20px;
+    padding-left: 50px;
+    
+}

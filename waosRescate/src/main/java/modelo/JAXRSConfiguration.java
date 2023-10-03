@@ -1,4 +1,4 @@
-package rescate;
+package modelo;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

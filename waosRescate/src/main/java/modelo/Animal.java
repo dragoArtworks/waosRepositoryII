@@ -1,4 +1,4 @@
-package rescate;
+package modelo;
 
 public class Animal {
 

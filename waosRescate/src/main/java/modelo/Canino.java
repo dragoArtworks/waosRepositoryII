@@ -1,4 +1,4 @@
-package rescate;
+package modelo;
 
 public class Canino extends Animal{
     int nivelEntrenamiento;
@@ -14,6 +14,11 @@ public class Canino extends Animal{
 
     public void setNivelEntrenamiento(int nivelEntrenamiento) {
         this.nivelEntrenamiento = nivelEntrenamiento;
+    }
+
+    @Override
+    public String toString() {
+        return "Canino{" + " nombre:"+nombre+" raza: "+raza+" color: "+raza+ "nivelEntrenamiento=" + nivelEntrenamiento + '}';
     }
     
     
