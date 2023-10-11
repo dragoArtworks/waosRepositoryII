@@ -118,3 +118,10 @@ select{
     padding-left: 50px;
     
 }
+.enlaces{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+

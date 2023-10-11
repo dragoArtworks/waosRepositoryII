@@ -1,8 +1,7 @@
 body {
     font-family: monospace;    
     background-image: url("imagenes/FondoGris.png");
-    background-size: 100%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-size:100%;
     font-size:xx-large;
     display: flex;
 }
@@ -15,7 +14,6 @@ body {
 }
 
 .header {
-    font-family: monospace; 
     text-align: left;
     align-items: center;
     display: flex;
@@ -35,14 +33,21 @@ body {
 }
 
 .button {
+    width: 20rem;
     font-family: monospace; 
     padding: 10px 20px;
     background-color: #0099ff;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5%;
+    margin-top: 0.2rem;
+    border-radius: 0.75rem;
     font-size:xx-large;
+}
+.enlaces{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
 }
 
 .button:hover {
@@ -59,5 +64,50 @@ body {
 .gatoperro1{
     width: 75px;
     height: 75px;
+}
+
+
+.descripcion{
+    display: inline;
+}
+.separador{
+    margin:0.5rem;
+    display: grid;
+    columns: 2;
+    background-color:rgb(56, 182, 255) ;
+    width: 50rem;
+    border-radius: 0.7rem;
+}
+.titulo{
+    display: inline;
+}
+ul{
+    grid-column: 2;
+    list-style: none;
+}
+
+.imagen{
+    opacity: 90%;
+    grid-column: 1;
+    margin-top: 3rem;
+    margin-left: 2rem; 
+    border-radius: 30px;
+    height: 10rem;
+    width: 10rem;
+}
+.botones-container{
+    letter-spacing: 7rem;
+}
+.empresa{
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 110px;
+    padding-left: 10%;
+    padding-top: 0%;
+}
+.empresaI{
+    grid-column: 2;
+    display: inline;
 }
 

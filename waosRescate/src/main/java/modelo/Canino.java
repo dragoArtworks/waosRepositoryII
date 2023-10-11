@@ -18,7 +18,7 @@ public class Canino extends Animal{
 
     @Override
     public String toString() {
-        return "Canino{" + " nombre:"+nombre+" raza: "+raza+" color: "+raza+ "nivelEntrenamiento=" + nivelEntrenamiento + '}';
+        return "Canino{" + "\nnombre: "+nombre+"\nraza:"+raza+"\ncolor:"+color+ "\nnivelEntrenamiento= " + nivelEntrenamiento + "}";
     }
     
     

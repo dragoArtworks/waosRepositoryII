@@ -23,4 +23,10 @@ public class Felino extends Animal {
     public void setToxo(boolean toxo) {
         this.toxo = toxo;
     }
+
+    @Override
+    public String toString() {
+        return "Felino{" + "\nnombre: "+nombre+"\nraza:"+raza+"\ncolor:"+color+ "\ntoxo=" + toxo + "\n}";
+    }
+    
 }
