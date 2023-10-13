@@ -8,11 +8,11 @@ package modelo;
  *
  * @author USER
  */
-public class Felino extends Animal {
+public class Felino extends Animal implements Calcular{
     boolean toxo;
 
-    public Felino(boolean toxo, String nombre, String raza, String color, int edad) {
-        super(nombre, raza, color, edad);
+    public Felino(boolean toxo, int indice, String nombre, String raza, String color, int edad) {
+        super(indice, nombre, raza, color, edad);
         this.toxo = toxo;
     }
 
@@ -28,5 +28,4 @@ public class Felino extends Animal {
     public String toString() {
         return "Felino{" + "\nnombre: "+nombre+"\nraza:"+raza+"\ncolor:"+color+ "\ntoxo=" + toxo + "\n}";
     }
-    
 }

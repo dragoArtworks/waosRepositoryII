@@ -4,6 +4,11 @@
     Author     : USER
 --%>
 
+<%@page import="java.util.ArrayList"%>
+<%@page import="modelo.Felino"%>
+<%@page import="java.util.HashMap"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page import="controlador.catalogoFelinos"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -36,7 +41,7 @@
                         <li><h4 class="descripcion">raza: </h4>${elemento.raza}</li>
                         <li><h4 class="descripcion">color: </h4>${elemento.color}</li>
                         <li><h4 class="descripcion">edad: </h4>${elemento.edad}</li>
-                        <li><h4 class="descripcion">Nivel de entrenamiento: </h4>${elemento.toxo}</li>
+                        <li><h4 class="descripcion">Toxoplasmosis: </h4>${elemento.toxo}</li>
                     </ul>
                     </br>
                 </div>

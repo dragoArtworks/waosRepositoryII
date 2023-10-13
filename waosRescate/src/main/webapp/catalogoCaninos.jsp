@@ -4,6 +4,7 @@
     Author     : USER
 --%>
 
+<%@page import="com.sun.javafx.collections.ElementObservableListDecorator"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="modelo.Canino"%>
 <%@page import="java.util.HashMap"%>
@@ -20,23 +21,25 @@
     <body>
         <div class="container">
             <div class="empresa">
-                 <a href="/waosRescate/index.html">
-                <img src="imagenes/logoWaos.png" alt=""width="100px" height="100px">
+                <a href="/waosRescate/index.html">
+                    <img src="imagenes/logoWaos.png" alt=""width="100px" height="100px">
                 </a>
-               <p class="empresaI">
+                <p class="empresaI">
                     Rescates <br> 
                     Waos
                 </p>
-                
+
             </div>
             <section class="botones-container">
                 <button class="button"> <a  class="enlaces" href="/waosRescate/agregarCaninos.html">agregar perrito</a></button>
                 <button class="button"> <a  class="enlaces" href="/waosRescate/index.html">volver al inicio</a></button>
             </section>
+
             <c:forEach var="elemento" items="${perros}">
                 <div class="separador">
                     <img class="imagen" src="imagenes/perrito.jpg" alt=""/>
                     <ul>
+                        <li style="display: none;">indice: ${elemento.indice}</li>
                         <li><h1 class="titulo">${elemento.nombre}</h1></li>
                         <li><h4 class="descripcion">raza: </h4>${elemento.raza}</li>
                         <li><h4 class="descripcion">color: </h4>${elemento.color}</li>
@@ -44,10 +47,14 @@
                         <li><h4 class="descripcion">Nivel de entrenamiento: </h4>${elemento.nivelEntrenamiento}</li>
                     </ul>
                     </br>
+                    <section>
+                        <form action="catalogo" method="get">
+                            <input type="hidden" name="indice" value="${elemento.indice}">
+                            <input type="submit" value="Adoptar">
+                        </form>
+                    </section>
                 </div>
             </c:forEach>
-
-
 
         </div>
     </body>

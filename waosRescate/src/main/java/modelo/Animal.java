@@ -1,7 +1,7 @@
 package modelo;
 
-public class Animal {
-
+public class Animal implements Calcular{
+    int indice=0;
     String nombre;
     String raza;
     String color;
@@ -10,11 +10,20 @@ public class Animal {
     public Animal() {
     }
 
-    public Animal(String nombre, String raza, String color, int edad) {
+    public Animal(int indice ,String nombre, String raza, String color, int edad) {
+        this.indice=indice;
         this.nombre = nombre;
         this.raza = raza;
         this.color = color;
         this.edad = edad;
+    }
+    
+    public int getIndice() {
+        return indice;
+    }
+
+    public void setIndice(int indice) {
+        this.indice = indice;
     }
 
     public String getNombre() {
@@ -48,5 +57,9 @@ public class Animal {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-
+    
+    @Override
+    public int CalcularPromedioEdad(int cantAnimales, int sumEdad) {
+        return sumEdad/cantAnimales;
+    }
 }

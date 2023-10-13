@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <script src="recursos/validarCaninos.js" type="text/javascript"></script>
     <title>agregar Caninos</title>
 </head>
 <body>
@@ -37,12 +38,21 @@
                     <input type="text" name="nombre" class="default">
                 </td>
             </tr>
+            
+            <tr>
+                <td class="columna">
+                    Color:
+                </td>
+                <td>
+                    <input type="text" name="color" class="default">
+                </td>
+            </tr>
             <tr>
                 <td class="columna">
                     Raza:
                 </td>
                 <td>
-                      <select name="raza" class="default"id="raza">
+                      <select name="raza" class="default" id="raza">
                         <option value="">seleccionar</option>
                         <option value="labrador retriever">labrador retriever</option>
                         <option value="bulldog frances">bulldog frances</option>
@@ -67,14 +77,6 @@
             </tr>
             <tr>
                 <td class="columna">
-                    Color:
-                </td>
-                <td>
-                    <input type="text" name="color" class="default">
-                </td>
-            </tr>
-            <tr>
-                <td class="columna">
                     Edad:
                 </td>
                 <td>
@@ -91,6 +93,7 @@
             </tr>
             <tr>
                 <td>
+                   <input type="hidden" name="token" id="tokenField" value="" />
                     <button type="submit" class="boton">Registrar</button>
                 </td>
                 
