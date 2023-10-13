@@ -35,7 +35,7 @@
             </section>
             <c:forEach var="elemento" items="${gatos}">
                 <div class="separador">
-                    <!--<img class="imagen" src="imagenes/perrito.jpg" alt=""/>--> 
+                    <img class="imagen" src="imagenes/gat-negro.jpg" alt=""/>
                     <ul>
                         <li><h1 class="titulo">${elemento.nombre}</h1></li>
                         <li><h4 class="descripcion">raza: </h4>${elemento.raza}</li>
@@ -44,6 +44,12 @@
                         <li><h4 class="descripcion">Toxoplasmosis: </h4>${elemento.toxo}</li>
                     </ul>
                     </br>
+                    <section>
+                        <form action="catalogof" method="get">
+                            <input type="hidden" name="indice" value="${elemento.indice}">
+                            <input class="button" type="submit" value="Adoptar">
+                        </form>
+                    </section>
                 </div>
             </c:forEach>
 

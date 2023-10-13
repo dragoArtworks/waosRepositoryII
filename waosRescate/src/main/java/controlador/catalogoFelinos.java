@@ -37,4 +37,17 @@ public class catalogoFelinos extends HttpServlet{
         indice++;
     }
     
+     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException{
+        int indiceI=Integer.parseInt(request.getParameter("indice"));
+        felinos.remove(indiceI);
+        
+        for (int i = 0; i < felinos.size(); i++) {
+            felinos.get(i).setIndice(i +1);
+            
+        }
+ 
+        response.sendRedirect("catalogoFelinos.jsp");
+    }
 }
+    
+

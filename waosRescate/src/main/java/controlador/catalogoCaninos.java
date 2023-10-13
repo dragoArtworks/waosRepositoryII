@@ -20,7 +20,7 @@ import modelo.Canino;
 
 @WebServlet("/catalogo")
 public class catalogoCaninos extends HttpServlet {
-    private  ArrayList perros=new ArrayList();
+    private  ArrayList<Canino> perros=new ArrayList<Canino>();
     int indice=0;
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
@@ -50,6 +50,12 @@ public class catalogoCaninos extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException{
         int indiceI=Integer.parseInt(request.getParameter("indice"));
         perros.remove(indiceI);
+        
+        for (int i = 0; i < perros.size(); i++) {
+            perros.get(i).setIndice(i +1);
+            
+        }
+ 
         response.sendRedirect("catalogoCaninos.jsp");
     }
 }
