@@ -8,7 +8,7 @@ package modelo;
  *
  * @author USER
  */
-public class Felino extends Animal implements Calcular{
+public class Felino extends Animal {
     boolean toxo;
 
     public Felino(boolean toxo, int indice, String nombre, String raza, String color, int edad) {

@@ -75,7 +75,7 @@ body {
     display: grid;
     columns: 2;
     background-color:rgb(56, 182, 255) ;
-    width: 50rem;
+    width: 55rem;
     border-radius: 0.7rem;
 }
 .titulo{
@@ -97,6 +97,7 @@ ul{
 }
 .botones-container{
     letter-spacing: 7rem;
+    text-align: center;
 }
 .empresa{
     grid-row: 1;

@@ -1,5 +1,7 @@
 package modelo;
 
+import java.util.ArrayList;
+
 public class Animal implements Calcular{
     int indice=0;
     String nombre;
@@ -57,9 +59,13 @@ public class Animal implements Calcular{
     public void setEdad(int edad) {
         this.edad = edad;
     }
-    
+
     @Override
-    public int CalcularPromedioEdad(int cantAnimales, int sumEdad) {
-        return sumEdad/cantAnimales;
+    public double calcularPromedioEdad(int sumedad, int cantAnimales) {
+        double edad=(double)(sumedad);
+        double animales=(double)(cantAnimales);
+        return edad/animales;
     }
+    
+    
 }

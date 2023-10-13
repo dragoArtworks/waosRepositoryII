@@ -1,6 +1,8 @@
 package modelo;
 
-public class Canino extends Animal implements Calcular{
+import java.util.ArrayList;
+
+public class Canino extends Animal {
     int nivelEntrenamiento;
 
     public Canino(int nivelEntrenamiento, int indice, String nombre, String raza, String color, int edad) {
@@ -20,5 +22,7 @@ public class Canino extends Animal implements Calcular{
     public String toString() {
         return "Canino{" + "\nnombre: "+nombre+"\nraza:"+raza+"\ncolor:"+color+ "\nnivelEntrenamiento= " + nivelEntrenamiento + "}";
     }
+    
+    
 }
 

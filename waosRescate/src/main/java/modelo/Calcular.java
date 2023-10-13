@@ -1,5 +1,7 @@
 package modelo;
 
+import java.util.ArrayList;
+
 public interface Calcular {
-    public int CalcularPromedioEdad(int cantAnimales,int sumEdad);
+    public double calcularPromedioEdad(int sumedad,int cantAnimales);
 }

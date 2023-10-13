@@ -20,19 +20,26 @@
     <body>
         <div class="container">
             <div class="empresa">
-                 <a href="/waosRescate/index.html">
-                <img src="imagenes/logoWaos.png" alt=""width="100px" height="100px">
+                <a href="/waosRescate/index.html">
+                    <img src="imagenes/logoWaos.png" alt=""width="100px" height="100px">
                 </a>
-               <p class="empresaI">
+                <p class="empresaI">
                     Rescates <br> 
                     Waos
                 </p>
-                
+
             </div>
+            <div class="header">
+                <h4 class="descripcion">Promedio de edades de nuestros felinos: ${promedioEdad}</h4>
+                <h4 class="descripcion">Felinos rescatados: ${cantidadGatos}</h4>
+            </div>
+
+
             <section class="botones-container">
-                <button class="button"> <a  class="enlaces" href="/waosRescate/agregarFelinos.html">agregar gaticos</a></button>
+                <button class="button"> <a  class="enlaces" href="/waosRescate/agregarFelinos.html">Ingresar Mininos</a></button>
                 <button class="button"> <a  class="enlaces" href="/waosRescate/index.html">volver al inicio</a></button>
             </section>
+
             <c:forEach var="elemento" items="${gatos}">
                 <div class="separador">
                     <img class="imagen" src="imagenes/gat-negro.jpg" alt=""/>
@@ -55,7 +62,7 @@
 
 
 
-        </div>
 
+        </div>
     </body>
 </html>

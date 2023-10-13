@@ -30,8 +30,12 @@
                 </p>
 
             </div>
+            <div class="header">
+                <h4 class="descripcion">Promedio de edades de nuestros caninos: ${promedioEdadC}</h4>
+                <h4 class="descripcion">caninos rescatados: ${cantidadPerros}</h4>
+            </div>
             <section class="botones-container">
-                <button class="button"> <a  class="enlaces" href="/waosRescate/agregarCaninos.html">agregar perrito</a></button>
+                <button class="button"> <a  class="enlaces" href="/waosRescate/agregarCaninos.html">Ingresar perritos</a></button>
                 <button class="button"> <a  class="enlaces" href="/waosRescate/index.html">volver al inicio</a></button>
             </section>
 
@@ -50,12 +54,13 @@
                     <section>
                         <form action="catalogo" method="get">
                             <input type="hidden" name="indice" value="${elemento.indice}">
-                            <input type="submit" value="Adoptar">
+                            <input class="button" type="submit" value="Adoptar">
                         </form>
                     </section>
                 </div>
-            </c:forEach>
 
+            </c:forEach>
+            
         </div>
     </body>
 </html>
