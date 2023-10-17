@@ -1,0 +1,7 @@
+Este ultimo commit se hizo un poco despues, pero lo unico que se hicieron fueron estos cambios:
+
+prom = perros.get(indiceI).CalcularPromedioEdad(sumedad, perros.size());
+			   ^ "Se cambio por una "c" minuscula, error pequeño de sintaxis
+
+ double prom = felinos.get(0).CalcularPromedioEdad(sumedad, felinos.size());
+                              ^ "Se cambio por una "c" minuscula, error pequeño de sintaxis
